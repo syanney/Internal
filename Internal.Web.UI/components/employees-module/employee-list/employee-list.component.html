@@ -1,0 +1,24 @@
+﻿<h1>Employee list</h1>
+
+<div>   
+    <a routerLink="create" routerLinkActive="active-link">Create</a>
+</div>
+
+<table class="table table-striped table-condensed">
+    <thead>
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.firstName}}</td>
+            <td>{{employee.lastName}}</td>
+            <td><button class="btn btn-xs btn-default" (click)="onDeleteEmployee(employee.id)">Delete</button></td>
+            <td><a [routerLink]="['edit', employee.id]">Edit</a></td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>2.5</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="components\employees-module\employee-create\employee-create.component.ts" />
+    <None Remove="components\employees-module\employee-details-form\employee-details-form.component.spec.ts" />
+    <None Remove="components\employees-module\employee-details-form\employee-details-form.component.ts" />
+    <None Remove="components\employees-module\employee-details.ts" />
+    <None Remove="components\employees-module\employee-edit\employee-edit.component.ts" />
+    <None Remove="components\employees-module\employee-summary.ts" />
+    <None Remove="components\employees-module\employees-home\employees-home.component.ts" />
+    <None Remove="components\employees-module\employees-routing.module.ts" />
+    <None Remove="components\root-module\1st.spec.ts" />
+    <None Remove="components\root-module\api-url.ts" />   
+    <None Remove="components\employees-module\services\employees-data.service.ts" />
+    <None Remove="components\root-module\home\home.component.ts" />
+    <None Remove="components\root-module\page-not-found\page-not-found.component.ts" />
+    <None Remove="components\shared-module\shared.module.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="components\employees-module\employee-create\employee-create.component.ts" />
+    <TypeScriptCompile Include="components\employees-module\employee-details-form\employee-details-form.component.spec.ts" />
+    <TypeScriptCompile Include="components\employees-module\employee-details-form\employee-details-form.component.ts" />
+    <TypeScriptCompile Include="components\employees-module\employee-details.ts" />
+    <TypeScriptCompile Include="components\employees-module\employee-edit\employee-edit.component.ts" />
+    <TypeScriptCompile Include="components\employees-module\employee-list\employee-list.component.ts" />
+    <TypeScriptCompile Include="components\employees-module\employee-summary.ts" />
+    <TypeScriptCompile Include="components\employees-module\employees-home\employees-home.component.ts" />
+    <TypeScriptCompile Include="components\employees-module\employees-routing.module.ts" />
+    <TypeScriptCompile Include="components\root-module\home\home.component.ts" />
+    <TypeScriptCompile Include="components\root-module\page-not-found\page-not-found.component.ts" />
+    <TypeScriptCompile Include="components\root-module\root-routing.module.ts" />
+    <TypeScriptCompile Include="components\shared-module\api-url.ts" />
+    <TypeScriptCompile Include="components\employees-module\employees.module.ts" />
+    <TypeScriptCompile Include="components\employees-module\services\employees-data.service.ts" />
+    <TypeScriptCompile Include="components\shared-module\shared.module.ts" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,49 @@
+{
+  "name": "internal.web.ui",
+  "version": "1.0.0",
+  "description": "internal.web.ui",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "http://xxx"
+  },
+  "dependencies": {
+    "@angular/animations": "4.4.4",
+    "@angular/common": "4.4.4",
+    "@angular/compiler": "4.4.4",
+    "@angular/core": "4.4.4",
+    "@angular/forms": "4.4.4",
+    "@angular/http": "4.4.4",
+    "@angular/platform-browser": "4.4.4",
+    "@angular/platform-browser-dynamic": "4.4.4",
+    "@angular/router": "4.4.4",
+    "core-js": "2.5.1",
+    "reflect-metadata": "0.1.10",
+    "rxjs": "5.4.3",
+    "zone.js": "0.8.18"
+  },
+  "devDependencies": {
+    "@types/jasmine": "2.6.0",
+    "@types/lodash": "4.14.76",
+    "@types/node": "8.0.31",
+    "angular-router-loader": "^0.6.0",
+    "angular2-template-loader": "0.6.2",
+    "awesome-typescript-loader": "3.2.3",
+    "css-loader": "0.28.7",
+    "css-to-string-loader": "0.1.3",
+    "html-loader": "0.5.1",
+    "html-webpack-plugin": "2.30.1",
+    "jasmine": "2.8.0",
+    "karma": "1.7.1",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-cli": "1.0.1",
+    "karma-jasmine": "1.1.0",
+    "karma-jasmine-html-reporter": "0.2.2",
+    "karma-sourcemap-loader": "0.3.7",
+    "karma-webpack": "2.0.4",
+    "style-loader": "0.18.2",
+    "typescript": "2.5.3",
+    "webpack": "3.6.0",
+    "webpack-merge": "4.1.0"
+  }
+}

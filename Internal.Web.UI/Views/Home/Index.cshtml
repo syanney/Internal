@@ -1,0 +1,11 @@
+﻿@using Microsoft.Extensions.Options
+@using Internal.Web.UI.Options
+
+@inject IOptionsSnapshot<ApplicationDetailsOptions> ApplicationDetailsOptions
+
+@{
+    ViewData["Title"] = $"{ApplicationDetailsOptions.Value.Name} - Version {@ApplicationDetailsOptions.Value.Version}";
+}
+
+<internal-root></internal-root>
+

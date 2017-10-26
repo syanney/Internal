@@ -1,0 +1,5 @@
+
+.Net Core 2.0
+
+Deploying to IIS:
+- Need to install '.NET Core Windows Server Hosting bundle'
