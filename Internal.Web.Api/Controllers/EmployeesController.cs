@@ -22,11 +22,7 @@ namespace Internal.Web.Api.Controllers
 
         [HttpGet]
         public async Task<IActionResult> GetEmployeesList()
-        {
-            //###########################################################################
-            //throw new System.Exception("testing");
-            //###########################################################################
-
+        {           
             return Ok(await _employeesRepository.GetEmployeesAsync());
         }
         
@@ -41,6 +37,8 @@ namespace Internal.Web.Api.Controllers
         {
             // TODO: DO WE NEED TO GET/RETURN THE NEWLY CREATED EMPLOYEE AFTER CREATION?
             await _commandExecutor.ExecuteAsync(command);
+
+            // Need to return HttpStatusCode.NoContent because of a bug in .net core 2.0
             return StatusCode((int)HttpStatusCode.NoContent);
         }
         
@@ -48,6 +46,7 @@ namespace Internal.Web.Api.Controllers
         public async Task<IActionResult> UpdateEmployee(int id, [FromBody]UpdateEmployeeCommand command)
         {
             await _commandExecutor.ExecuteAsync(command);
+            // Need to return HttpStatusCode.NoContent because of a bug in .net core 2.0
             return StatusCode((int)HttpStatusCode.NoContent);
         }
 
