@@ -37,7 +37,7 @@ namespace Internal.Web.Api.Controllers
         {
             // TODO: DO WE NEED TO GET/RETURN THE NEWLY CREATED EMPLOYEE AFTER CREATION?
             await _commandExecutor.ExecuteAsync(command);
-             
+              
             // Need to return HttpStatusCode.NoContent because of a bug in .net core 2.0
             return StatusCode((int)HttpStatusCode.NoContent);
         }
