@@ -34,8 +34,7 @@ namespace Internal.Web.Api.Controllers
         
         [HttpPost]
         public async Task<IActionResult> CreateEmployee([FromBody]CreateEmployeeCommand command)
-        {
-            // TODO: DO WE NEED TO GET/RETURN THE NEWLY CREATED EMPLOYEE AFTER CREATION?
+        {            
             await _commandExecutor.ExecuteAsync(command);
               
             // Need to return HttpStatusCode.NoContent because of a bug in .net core 2.0
