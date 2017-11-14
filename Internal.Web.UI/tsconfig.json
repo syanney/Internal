@@ -14,5 +14,10 @@
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "typeRoots": [ "node_modules/@types" ]
-  }
+  },
+
+  // Uncomment once upagraded to angular 5:
+  //"angularCompilerOptions": {
+  //  "preserveWhitespaces": false
+  //}
 }
