@@ -5,30 +5,30 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "http://xxx"
+    "url": "https://github.com/syanney/Internal.git"
   },
   "dependencies": {
-    "@angular/animations": "4.4.4",
-    "@angular/common": "4.4.4",
-    "@angular/compiler": "4.4.4",
-    "@angular/core": "4.4.4",
-    "@angular/forms": "4.4.4",
-    "@angular/http": "4.4.4",
-    "@angular/platform-browser": "4.4.4",
-    "@angular/platform-browser-dynamic": "4.4.4",
-    "@angular/router": "4.4.4",
+    "@angular/animations": "5.0.1",
+    "@angular/common": "5.0.1",
+    "@angular/compiler": "5.0.1",
+    "@angular/core": "5.0.1",
+    "@angular/forms": "5.0.1",
+    "@angular/http": "5.0.1",
+    "@angular/platform-browser": "5.0.1",
+    "@angular/platform-browser-dynamic": "5.0.1",
+    "@angular/router": "5.0.1",
     "core-js": "2.5.1",
-    "reflect-metadata": "0.1.10", // Not needed in angular 5 ?
-    "rxjs": "5.4.3",
+    "reflect-metadata": "0.1.10",
+    "rxjs": "5.5.2",
     "zone.js": "0.8.18"
   },
   "devDependencies": {
-    "@types/jasmine": "2.6.0",
-    "@types/lodash": "4.14.76",
-    "@types/node": "8.0.31",
-    "angular-router-loader": "^0.6.0",
+    "@types/jasmine": "2.8.2",
+    "@types/lodash": "4.14.85",
+    "@types/node": "6.0.92",
+    "angular-router-loader": "0.7.0",
     "angular2-template-loader": "0.6.2",
-    "awesome-typescript-loader": "3.2.3",
+    "awesome-typescript-loader": "3.3.0",
     "css-loader": "0.28.7",
     "css-to-string-loader": "0.1.3",
     "html-loader": "0.5.1",
@@ -40,10 +40,10 @@
     "karma-jasmine": "1.1.0",
     "karma-jasmine-html-reporter": "0.2.2",
     "karma-sourcemap-loader": "0.3.7",
-    "karma-webpack": "2.0.4",
-    "style-loader": "0.18.2",
-    "typescript": "2.5.3",
-    "webpack": "3.6.0",
-    "webpack-merge": "4.1.0"
+    "karma-webpack": "2.0.6",
+    "style-loader": "0.19.0",
+    "typescript": "2.6.1",
+    "webpack": "3.8.1",
+    "webpack-merge": "4.1.1"
   }
 }
