@@ -15,12 +15,12 @@ module.exports = {
     },
 
     output: {        
-        path: path.resolve(__dirname, './wwwroot/dist'),
+        path: path.resolve(__dirname, './wwwroot/dist/scripts'),
         filename: '[name]-bundle.js',        
         chunkFilename: '[name]-chunk-[chunkhash].js', // Use [chunkhash] for cache busting on the browser.        
         // 'publicPath' is used when loading chunk files. Important: don't include a leading slash, so the path can still
         // be found when application deployed to IIS, regardles of what the application name in IIS is.
-        publicPath: 'dist/'      
+        publicPath: 'dist/scripts/'      
     },
 
     resolve: {
