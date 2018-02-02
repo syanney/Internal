@@ -1,9 +1,3 @@
 
-- Visual Studio 2017
-- .Net Core 2.0
-- Angular 4
-- CQRS
-
-
 Deploying to IIS:
 - Need to install '.NET Core Windows Server Hosting bundle'
