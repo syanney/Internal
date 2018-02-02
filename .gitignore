@@ -1,5 +1,4 @@
 .vs
-*csproj.user
 bin
 obj
 node_modules
