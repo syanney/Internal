@@ -22,10 +22,12 @@ namespace Internal.Web.Api.Middleware
             }
             catch (Exception exception)
             {
-                using (StreamWriter writer = File.AppendText(@"D:\steve\Development\VS_Community_2017\Internal\Internal.Web.Api\logfile.txt"))
-                {
-                    writer.WriteLine(exception.ToString());
-                }
+                // TODO: Use a logging library, e.g. Serilog
+
+                //using (StreamWriter writer = File.AppendText(@"D:\steve\Development\VS_Community_2017\Internal\Internal.Web.Api\logfile.txt"))
+                //{
+                //    writer.WriteLine(exception.ToString());
+                //}
 
                 throw;
             }
