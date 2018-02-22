@@ -1,4 +1,6 @@
 
+A web application that allows a user to perform CRUD operations on employee records.
+
 Developed using:
 
 - Visual Studio 2017
