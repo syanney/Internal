@@ -5,6 +5,8 @@ Developed using:
 
 - Visual Studio 2017
 - .Net Core 2.0
+- Castle Windsor
+- Entity Framework
 - Angular 4
 - CQRS
 - SQL Server
