@@ -1,10 +1,23 @@
-﻿namespace Internal.Queries.Dtos
+﻿using Internal.Common.Validation;
+
+namespace Internal.Queries.Dtos
 {
     public class EmployeeDetailsDto
     {
-        public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string MiddleName { get; set; }
-        public string LastName { get; set; }
+        public EmployeeDetailsDto(int id, string firstName, string middleName, string lastName)
+        {
+            ArgumentValidator.EnsureIsNotNullOrWhitespace(firstName, nameof(firstName));
+            ArgumentValidator.EnsureIsNotNullOrWhitespace(lastName, nameof(lastName));
+
+            Id = id;
+            FirstName = firstName;
+            MiddleName = middleName;
+            LastName = lastName;
+        }
+
+        public int Id { get; }
+        public string FirstName { get; }
+        public string MiddleName { get; }
+        public string LastName { get; }
     }
 }

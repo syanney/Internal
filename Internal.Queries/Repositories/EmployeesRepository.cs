@@ -18,31 +18,21 @@ namespace Internal.Queries.Repositories
 
         public async Task<EmployeeDetailsDto> GetEmployeeByIdAsync(int employeeId)
         {
+            EmployeeDetailsDto employeeDetailsDto = null;
+
             var employeeEntity = await _dbContext.Employees.SingleOrDefaultAsync(employee => employee.Id == employeeId);
             if (employeeEntity != null)
             {
-                return new EmployeeDetailsDto
-                {
-                    Id = employeeEntity.Id,
-                    FirstName = employeeEntity.FirstName,
-                    MiddleName = employeeEntity.MiddleName,
-                    LastName = employeeEntity.LastName
-                };
+                employeeDetailsDto = new EmployeeDetailsDto(employeeEntity.Id, employeeEntity.FirstName, employeeEntity.MiddleName, employeeEntity.LastName);                
             }
 
-            return null;
+            return employeeDetailsDto;
         }
 
         public async Task<IEnumerable<EmployeeSummaryDto>> GetEmployeesAsync()
         {
             var query = await _dbContext.Employees.ToListAsync();
-
-            return query.Select(employeeEntity => new EmployeeSummaryDto
-            {
-                Id = employeeEntity.Id,
-                FirstName = employeeEntity.FirstName,
-                LastName = employeeEntity.LastName
-            });
+            return query.Select(employeeEntity => new EmployeeSummaryDto(employeeEntity.Id, employeeEntity.FirstName, employeeEntity.LastName));
         }
     }
 }

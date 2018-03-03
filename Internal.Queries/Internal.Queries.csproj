@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Internal.Common\Internal.Common.csproj" />
     <ProjectReference Include="..\Internal.SqlDataSource\Internal.SqlDataSource.csproj" />
   </ItemGroup>
 
