@@ -13,6 +13,7 @@ export class EmployeeListComponent implements OnInit {
 
     employees: EmployeeSummary[] = [];
     x: number;
+    y: string;
 
     constructor(private _employeesDataService: EmployeesDataService) {
     }
