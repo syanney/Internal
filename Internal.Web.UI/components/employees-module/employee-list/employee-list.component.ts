@@ -10,13 +10,8 @@ import { EmployeesDataService } from '../services/employees-data.service';
     templateUrl: './employee-list.component.html'
 })
 export class EmployeeListComponent implements OnInit {    
-
-    onlyInMaster: string;
-    employees: EmployeeSummary[] = [];
-    x: number;
-    //y: string;
-    experimental: number;
-
+   
+    employees: EmployeeSummary[] = [];  
 
     constructor(private _employeesDataService: EmployeesDataService) {
     }
