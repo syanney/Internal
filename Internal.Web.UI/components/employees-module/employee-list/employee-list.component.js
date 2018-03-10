@@ -13,6 +13,7 @@ var core_1 = require("@angular/core");
 var lodash_1 = require("lodash");
 var employees_data_service_1 = require("../services/employees-data.service");
 var EmployeeListComponent = /** @class */ (function () {
+    //y: string;
     function EmployeeListComponent(_employeesDataService) {
         this._employeesDataService = _employeesDataService;
         this.employees = [];
