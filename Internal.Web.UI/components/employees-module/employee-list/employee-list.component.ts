@@ -11,9 +11,11 @@ import { EmployeesDataService } from '../services/employees-data.service';
 })
 export class EmployeeListComponent implements OnInit {    
 
+    onlyInMaster: string;
     employees: EmployeeSummary[] = [];
     x: number;
     //y: string;
+
 
     constructor(private _employeesDataService: EmployeesDataService) {
     }
